@@ -33,7 +33,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:300;letter-spacing:-.02em;margin:0
 h1 em,h2 em,h3 em{font-style:italic;font-weight:300}
 p{margin:0}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.wrap{max-width:1240px;margin:0 auto;padding-left:28px;padding-right:28px}
 .lab{font:500 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:rgba(231,229,228,.5)}
 .dim{color:rgba(231,229,228,.6)}
 
@@ -62,7 +62,7 @@ a{color:inherit;text-decoration:none}
 }
 
 /* ─── первый экран ─── */
-.hero{display:grid;grid-template-columns:5fr 7fr;gap:52px;align-items:center;padding:160px 0 90px}
+.hero{display:grid;grid-template-columns:5fr 7fr;gap:52px;align-items:center;padding-top:160px;padding-bottom:90px}
 .hero h1{font-size:clamp(42px,5.4vw,74px)}
 .hero__sub{margin-top:26px;font-size:19px;line-height:1.65;color:rgba(231,229,228,.6);max-width:46ch}
 .proof{display:flex;gap:28px;margin-top:38px;flex-wrap:wrap;align-items:center}
@@ -199,7 +199,7 @@ dialog[open]{animation:pop var(--t)}
 .done .recap div{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 .done .recap span{color:rgba(231,229,228,.55)}
 
-section{padding:88px 0}
+section{padding-top:88px;padding-bottom:88px}
 .head{max-width:62ch}
 .head h2{font-size:clamp(30px,3.6vw,46px)}
 .head p{margin-top:15px;font-size:17px;color:rgba(231,229,228,.6)}
@@ -224,14 +224,15 @@ section{padding:88px 0}
   .note{right:8px;top:-20px;max-width:186px}
 }
 @media (max-width:560px){
-  .wrap{padding:0 18px}
+  .wrap{padding-left:18px;padding-right:18px}
   body{font-size:17px}
-  section{padding:64px 0}
+  section{padding-top:64px;padding-bottom:64px}
   .arch{padding:58px 24px 30px;border-radius:7rem 7rem 24px 24px}
   .panel{padding:18px;border-radius:0 18px 18px 18px}
   .cart{flex-direction:column;align-items:stretch;gap:16px}
   .cart .cta{margin-left:0}
   .sticky{padding:28px}
+  .note{position:static;transform:none;max-width:none;margin:0 0 22px;right:auto;top:auto}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
